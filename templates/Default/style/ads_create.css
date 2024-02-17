@@ -1,0 +1,286 @@
+#ads_sb {
+	background: #F5F7FA;
+	margin: 0px 15px 15px 0px;
+	line-height: 17px;
+	border: 1px solid #E8EAF3;
+	padding: 10px;
+}
+
+#ads_sb .ads_img {
+	float:left;
+	width:100px;
+	height:100px;
+	margin-right:10px;
+	overflow: hidden;
+        border-radius: 3px 3px 3px 3px;
+}
+
+#ads_sb .ads_img_top {
+	float:left;
+	width:100px;
+	height:100px;
+	margin-right:10px;
+	margin-top: -38px;
+	border: 1px solid #D9DFEB;
+	overflow: hidden;
+}
+
+#ads_sb .ads_info{
+	line-height: 20px;
+	color:#666;
+}
+
+#ads_sb .ads_head{
+	border-top: 1px solid #E4E7EB;
+	border-bottom: 1px solid #E4E7EB;
+	background: #EDEEF3;
+	padding: 15px 20px 15px 20px;
+	margin: -10px -10px 0px -10px;
+	height: 17px;
+}
+
+.ads_inp{
+	height: 20px;
+}
+
+.ads_title{
+	cursor: pointer;
+	color: #535B7E;
+	margin-left: 100px;
+	font-weight: bold;
+}
+
+.ads_edit_container{
+	padding:20px;
+	margin: 70px 70px;
+	border: 10px solid #C8D1DD;
+	background: #F0F2F7;
+}
+
+.ads_continfo{
+	margin-left: 110px;
+}
+
+.ads_title_editor{
+	color: #535B7E;
+	font-weight: bold;
+}
+
+.ads_err_yellow {
+	padding: 10px;
+	background: #E4E7F0;
+	border: 1px solid #BFCCE4;
+	margin-top: 10px;
+}
+
+.ads_set_hover{
+	cursor: pointer;
+	color: #535B7E;
+}
+
+#ads_headmenu{
+	border: 1px solid #CED9E4;
+	background-color: #E7ECF3;
+	color: #45688E;
+	padding: 8px;
+	margin: -9px -6px 10px -6px;
+	font-weight: bold;
+}
+
+/* ------- */
+/* General */
+/* ------- */
+
+.ads_unions_navigation_about .ad_box_preview {
+	border: 1px solid #DCE3E9;
+}
+.ad_box_new {
+	background: #FFF;
+	border: 1px solid #DCE3E9;
+	border-width: 0px 0px 1px 0px;
+	padding: 0px 0px 11px 0px;
+	margin: 0px;
+	width: 118px;
+	overflow: hidden;
+	text-align: center;
+	display: block;
+}
+
+.ad_title_new {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 9px 5px 10px 5px;
+	color: #36638E;
+	text-align: center;
+}
+
+.ad_desc_new {
+	margin: 10px 2px 0px 2px;
+	color: #000;
+}
+
+/*
+ *   About section
+ */
+
+.ads_help_section.section_wrap {
+  padding: 20px 25px 20px 10px;
+  line-height: 130%;
+}
+
+.ads_help_section .header {
+  font-size: 1.09em;
+  margin: 0px 0px 20px 1px;
+  border: none;
+}
+.ads_help_section .sub_header {
+  border-bottom: 1px solid #DAE1E8;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+.ads_help_section .sub_header,
+.ads_help_section .header {
+  color: #45688E;
+  font-weight: bold;
+}
+.ads_help_section .header_hl {
+  border-bottom: 1px solid #DAE1E8;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.ads_help_section .listing li {
+  padding-top: 2px;
+}
+
+.ads_help_section .listing,
+.ads_help_section ol {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.ads_help_section .par_divider {
+  margin-bottom: 31px;
+}
+
+.ads_help_section .emph_link {
+  margin-left: 26px;
+}
+
+#unions_navigation {
+  vertical-align: top;
+}
+
+#unions_navigation {
+  width: 150px;
+  padding: 12px 12px 12px 0;
+  height:500px;
+}
+
+#unions_navigation .edit_button_wrap {
+  padding-bottom: 10px;
+}
+
+#unions_navigation .nav_separator {
+  border-bottom: 1px solid rgb(211, 219, 225);
+  height: 1px;
+  overflow: hidden;
+  margin: 7px 0px 8px 0;
+}
+
+#unions_navigation a.nav {
+  padding: 4px 5px 4px 10px;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #F7F7F7;
+}
+#unions_navigation a.nav {
+  border: 1px solid white;
+}
+#unions_navigation a.nav {
+  max-width: 133px;
+  word-wrap: break-word;
+}
+#unions_navigation a.nav:hover {
+  background-color: #DAE1E8;
+  border-color: #DAE1E8;
+  text-decoration: none;
+}
+#unions_navigation a.nav:hover {
+  background-color: #E1E7ED;
+  border-color: #E1E7ED;
+}
+#unions_navigation a.nav_selected,
+#unions_navigation a.nav_selected:hover {
+  border-color: #517295;
+  background-color: #5e82a8;
+  color: #FFF;
+}
+
+
+#unions_navigation.ads_unions_navigation_about {
+  background-color: #F7F7F7;
+  border-left: 1px solid #DAE1E8;
+  padding: 14px 10px;
+}
+
+#unions_navigation.ads_unions_navigation_about .nav {
+  border-color: #F7F7F7;
+}
+
+#unions_navigation.ads_unions_navigation_about .nav_selected {
+  border-color: #517295;
+}
+
+.ads_unions_navigation_about .ad_box_preview {
+  border: 1px solid #DCE3E9
+}
+
+/* ROTATOR */
+
+#ads_rows{
+ position: relative;
+ padding: 15px 0px 0px 15px;
+}
+
+#ads_view{
+ margin:15px 5px 5px 4px;
+}
+
+.ads_view{
+ text-align: center;
+ padding: 10px 0px;
+ width:110px;
+ margin: 0px 0px 10px;
+ overflow: hidden;
+}
+
+.ads_view1{
+ text-align: center;
+ padding: 10px 0px;
+ width:110px;
+ margin: 0px 0px 10px;
+ overflow: hidden;
+}
+
+.ads_view h4 {
+ font-size: 1.00em;
+ border-bottom: solid 1px #DAE1E8;
+ padding: 0px 0px 3px;
+ margin: 0px 5px 8px;
+}
+
+.ads_close {
+ margin: -10px 112px;
+ position: absolute;
+ background:url("../images/hide.gif") no-repeat;
+ width:14px;
+ height:14px;
+cursor:pointer;
+}
+
+.ads_description {
+ padding-top: 10px;
+}
+.adsinpst{border:1px solid #c6d4dc;padding:4px;width:381px}

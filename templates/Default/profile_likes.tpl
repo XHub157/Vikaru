@@ -1,0 +1,1 @@
+<div class="likeonefriend"><a href="/u{user-id}" onClick="Page.Go(this.href); return false"><div><img src="{ava}" alt="" /></div>{name} <span>{last-name}</span></a></div>
