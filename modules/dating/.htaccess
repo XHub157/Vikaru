@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^male/?$ /modules/dating/male.php [L,QSA]
+RewriteRule ^women/?$ /modules/dating/women.php [L,QSA]
+RewriteRule ^people/?$ /modules/dating/people.php [L,QSA]
+RewriteRule ^online/?$ /modules/dating/online.php [L,QSA]
+RewriteRule ^administration/?$ /modules/dating/administration.php [L,QSA]
+RewriteRule ^search/?$ /modules/dating/search.php [L,QSA]
+RewriteRule ^people/search/?$ /modules/dating/search_people.php [L,QSA]

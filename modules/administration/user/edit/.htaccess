@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^main/([0-9]*)/?$ /modules/administration/user/edit/main.php?id=$1 [L,QSA]
+RewriteRule ^contacts/([0-9]*)/?$ /modules/administration/user/edit/contacts.php?id=$1 [L,QSA]
+RewriteRule ^interests/([0-9]*)/?$ /modules/administration/user/edit/interests.php?id=$1 [L,QSA]
+RewriteRule ^type/([0-9]*)/?$ /modules/administration/user/edit/type.php?id=$1 [L,QSA]
+RewriteRule ^additionally/([0-9]*)/?$ /modules/administration/user/edit/additionally.php?id=$1 [L,QSA]

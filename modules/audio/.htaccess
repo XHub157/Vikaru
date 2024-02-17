@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/audio/index.php?id=$1 [L,QSA]
+RewriteRule ^search/?$ /modules/audio/search.php [L,QSA]

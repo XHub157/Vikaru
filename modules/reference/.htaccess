@@ -1,0 +1,15 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^/?$ /modules/reference/index.php [L,QSA]
+RewriteRule ^([0-9]*)/?$ /modules/reference/view_reference.php?id=$1 [L,QSA]
+RewriteRule ^add_reference/?$ /modules/reference/add_reference.php [L,QSA]
+RewriteRule ^edit_reference/([0-9]*)/?$ /modules/reference/edit_reference.php?id=$1 [L,QSA]
+RewriteRule ^delete_reference/([0-9]*)/?$ /modules/reference/delete_reference.php?id=$1 [L,QSA]
+RewriteRule ^rating/plus/([0-9]*)/?$ /modules/reference/rating_plus.php?id=$1 [L,QSA]
+RewriteRule ^rating/minus/([0-9]*)/?$ /modules/reference/rating_minus.php?id=$1 [L,QSA]
+RewriteRule ^views/([0-9]*)/?$ /modules/reference/views.php?id=$1 [L,QSA]
+RewriteRule ^rating/([0-9]*)/?$ /modules/reference/rating.php?id=$1 [L,QSA]

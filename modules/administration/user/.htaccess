@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/administration/user/index.php?id=$1 [L,QSA]
+
+
+

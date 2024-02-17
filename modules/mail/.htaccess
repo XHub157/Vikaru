@@ -1,0 +1,19 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^contact/([0-9]*)/?$ /modules/mail/mail_contact.php?id=$1 [L,QSA]
+RewriteRule ^received/?$ /modules/mail/mail_received.php [L,QSA]
+RewriteRule ^posted/?$ /modules/mail/mail_posted.php [L,QSA]
+RewriteRule ^send/?$ /modules/mail/user_send.php [L,QSA]
+RewriteRule ^favorites/?$ /modules/mail/mail_favorites.php [L,QSA]
+RewriteRule ^spam/?$ /modules/mail/mail_spam.php [L,QSA]
+RewriteRule ^search/?$ /modules/mail/mail_search.php [L,QSA]
+RewriteRule ^send/([0-9]*)/?$ /modules/mail/mail_send.php?id=$1 [L,QSA]
+RewriteRule ^delete_message/([0-9]*)/?$ /modules/mail/mail_delete.php?id=$1 [L,QSA]
+RewriteRule ^delete_contact/([0-9]*)/?$ /modules/mail/contact_delete.php?id=$1 [L,QSA]
+RewriteRule ^edit_message/([0-9]*)/?$ /modules/mail/mail_edit.php?id=$1 [L,QSA]
+RewriteRule ^favorites/([0-9]*)/?$ /modules/mail/favorites_add.php?id=$1 [L,QSA]
+RewriteRule ^spam/([0-9]*)/?$ /modules/mail/spam_add.php?id=$1 [L,QSA]

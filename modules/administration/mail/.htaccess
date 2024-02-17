@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^search/?$ /modules/administration/mail/search.php [L,QSA]
+RewriteRule ^user/([0-9]*)/?$ /modules/administration/mail/user.php?id=$1 [L,QSA]
+
+

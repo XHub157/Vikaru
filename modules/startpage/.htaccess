@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^history/?$ /modules/startpage/history.php [L,QSA]
+RewriteRule ^history/clear/?$ /modules/startpage/clear.php [L,QSA]
+
+
+
+

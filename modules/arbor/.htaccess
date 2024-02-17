@@ -1,0 +1,14 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^add_comment/?$ /modules/arbor/add_comment.php [L,QSA]
+RewriteRule ^answer_comment/([0-9]*)/?$ /modules/arbor/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^quote_comment/([0-9]*)/?$ /modules/arbor/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^edit_comment/([0-9]*)/?$ /modules/arbor/edit_comment.php?id=$1 [L,QSA]
+RewriteRule ^delete_comment/([0-9]*)/?$ /modules/arbor/delete_comment.php?id=$1 [L,QSA]
+RewriteRule ^hide_comment/([0-9]*)/?$ /modules/arbor/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^like_comment/([0-9]*)/?$ /modules/arbor/like_comment.php?id=$1 [L,QSA]
+

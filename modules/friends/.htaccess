@@ -1,0 +1,15 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^user/([0-9]*)/?$ /modules/friends/friends_user.php?id=$1 [L,QSA]
+RewriteRule ^online/([0-9]*)/?$ /modules/friends/friends_online.php?id=$1 [L,QSA]
+RewriteRule ^birthday/([0-9]*)/?$ /modules/friends/friends_birthday.php?id=$1 [L,QSA]
+RewriteRule ^new/?$ /modules/friends/friends_new.php [L,QSA]
+RewriteRule ^add/([0-9]*)/?$ /modules/friends/friends_add.php?id=$1 [L,QSA]
+RewriteRule ^delete/?$ /modules/friends/friends_delete.php [L,QSA]
+RewriteRule ^delete/([0-9]*)/?$ /modules/friends/friends_delete_user.php?id=$1 [L,QSA]
+RewriteRule ^yes/([0-9]*)/?$ /modules/friends/friends_yes.php?id=$1 [L,QSA]
+RewriteRule ^no/([0-9]*)/?$ /modules/friends/friends_no.php?id=$1 [L,QSA]

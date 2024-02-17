@@ -1,0 +1,15 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^add_dir/?$ /modules/gifts/add_dir.php [L,QSA]
+RewriteRule ^add_gift/([0-9]*)/?$ /modules/gifts/add_gift.php?id=$1 [L,QSA]
+RewriteRule ^edit_dir/([0-9]*)/?$ /modules/gifts/edit_dir.php?id=$1 [L,QSA]
+RewriteRule ^delete_dir/([0-9]*)/?$ /modules/gifts/delete_dir.php?id=$1 [L,QSA]
+RewriteRule ^dir/([0-9]*)/?$ /modules/gifts/dir.php?id=$1 [L,QSA]
+RewriteRule ^gift/([0-9]*)/?$ /modules/gifts/gift.php?id=$1 [L,QSA]
+RewriteRule ^user/([0-9]*)/?$ /modules/gifts/gifts_user.php?id=$1 [L,QSA]
+RewriteRule ^user/gift/([0-9]*)/?$ /modules/gifts/gift_user.php?id=$1 [L,QSA]
+RewriteRule ^user/delete_gift/([0-9]*)/?$ /modules/gifts/gift_user_delete.php?id=$1 [L,QSA]

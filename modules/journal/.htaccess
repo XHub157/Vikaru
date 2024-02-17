@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/journal/index.php?id=$1 [L,QSA]
+RewriteRule ^clean/?$ /modules/journal/clean.php [L,QSA]

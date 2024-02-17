@@ -1,0 +1,48 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^/?$ /modules/forum/index.php [L,QSA]
+RewriteRule ^([0-9]*)/?$ /modules/forum/forum.php?id=$1 [L,QSA]
+RewriteRule ^section/([0-9]*)/?$ /modules/forum/section.php?id=$1 [L,QSA]
+RewriteRule ^topic/([0-9]*)/?$ /modules/forum/view_topic.php?id=$1 [L,QSA]
+RewriteRule ^views/([0-9]*)/?$ /modules/forum/views.php?id=$1 [L,QSA]
+RewriteRule ^likes/([0-9]*)/?$ /modules/forum/likes.php?id=$1 [L,QSA]
+RewriteRule ^share/([0-9]*)/?$ /modules/forum/share.php?id=$1 [L,QSA]
+
+RewriteRule ^add_forum/?$ /modules/forum/add_forum.php [L,QSA]
+RewriteRule ^add_section/([0-9]*)/?$ /modules/forum/add_section.php?id=$1 [L,QSA]
+RewriteRule ^add_topic/([0-9]*)/?$ /modules/forum/add_topic.php?id=$1 [L,QSA]
+RewriteRule ^add_comment/([0-9]*)/?$ /modules/forum/add_comment.php?id=$1 [L,QSA]
+
+RewriteRule ^edit_forum/([0-9]*)/?$ /modules/forum/edit_forum.php?id=$1 [L,QSA]
+RewriteRule ^edit_section/([0-9]*)/?$ /modules/forum/edit_section.php?id=$1 [L,QSA]
+RewriteRule ^edit_topic/([0-9]*)/?$ /modules/forum/edit_topic.php?id=$1 [L,QSA]
+RewriteRule ^edit_comment/([0-9]*)/?$ /modules/forum/edit_comment.php?id=$1 [L,QSA]
+
+RewriteRule ^delete_forum/([0-9]*)/?$ /modules/forum/delete_forum.php?id=$1 [L,QSA]
+RewriteRule ^delete_section/([0-9]*)/?$ /modules/forum/delete_section.php?id=$1 [L,QSA]
+RewriteRule ^delete_topic/([0-9]*)/?$ /modules/forum/delete_topic.php?id=$1 [L,QSA]
+RewriteRule ^delete_comment/([0-9]*)/?$ /modules/forum/delete_comment.php?id=$1 [L,QSA]
+
+RewriteRule ^share_topic/([0-9]*)/?$ /modules/forum/share_topic.php?id=$1 [L,QSA]
+RewriteRule ^closed_topic/([0-9]*)/?$ /modules/forum/closed_topic.php?id=$1 [L,QSA]
+RewriteRule ^locked_topic/([0-9]*)/?$ /modules/forum/locked_topic.php?id=$1 [L,QSA]
+RewriteRule ^like_topic/([0-9]*)/?$ /modules/forum/like_topic.php?id=$1 [L,QSA]
+RewriteRule ^move_topic_add/([0-9]*)/?$ /modules/forum/move_topic_add.php?id=$1 [L,QSA]
+RewriteRule ^move_topic/([0-9]*)/?$ /modules/forum/move_topic.php?id=$1 [L,QSA]
+RewriteRule ^new_topic/?$ /modules/forum/new_topic.php [L,QSA]
+
+RewriteRule ^answer_comment/([0-9]*)/?$ /modules/forum/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^quote_comment/([0-9]*)/?$ /modules/forum/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^hide_comment/([0-9]*)/?$ /modules/forum/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^like_comment/([0-9]*)/?$ /modules/forum/like_comment.php?id=$1 [L,QSA]
+RewriteRule ^new_comments/?$ /modules/forum/new_comments.php [L,QSA]
+
+RewriteRule ^clean_clipboard/?$ /modules/forum/clean_clipboard.php [L,QSA]
+RewriteRule ^search/?$ /modules/forum/search.php [L,QSA]
+RewriteRule ^search/advanced/?$ /modules/forum/advanced.php [L,QSA]
+
+RewriteRule ^add_bookmarks/([0-9]*)/?$ /modules/forum/add_bookmarks.php?id=$1 [L,QSA]

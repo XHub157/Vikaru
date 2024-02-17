@@ -1,0 +1,15 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^password/?$ /modules/settings/password.php [L,QSA]
+RewriteRule ^email/?$ /modules/settings/email.php [L,QSA]
+RewriteRule ^mail/?$ /modules/settings/mail.php [L,QSA]
+RewriteRule ^clock/?$ /modules/settings/clock.php [L,QSA]
+RewriteRule ^page/?$ /modules/settings/page.php [L,QSA]
+RewriteRule ^journal/?$ /modules/settings/journal.php [L,QSA]
+RewriteRule ^site_themes/?$ /modules/settings/site_themes.php [L,QSA]
+RewriteRule ^avatar/?$ /modules/settings/avatar.php [L,QSA]
+RewriteRule ^guestbook/?$ /modules/settings/guestbook.php [L,QSA]

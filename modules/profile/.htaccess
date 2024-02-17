@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/profile/profile.php?id=$1 [L,QSA]
+RewriteRule ^ban/([0-9]*)/?$ /modules/profile/ban.php?id=$1 [L,QSA]
+RewriteRule ^blog/([0-9]*)/?$ /modules/profile/blog.php?id=$1 [L,QSA]
+RewriteRule ^gifts/([0-9]*)/?$ /modules/profile/gifts.php?id=$1 [L,QSA]

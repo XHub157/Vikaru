@@ -1,0 +1,14 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^login_change/?$ /modules/services/login_change.php [L,QSA]
+RewriteRule ^rating_change/?$ /modules/services/rating_change.php [L,QSA]
+RewriteRule ^hide_change/?$ /modules/services/hide_change.php [L,QSA]
+RewriteRule ^vip_change/?$ /modules/services/vip_change.php [L,QSA]
+RewriteRule ^logs/?$ /modules/services/logs.php [L,QSA]
+RewriteRule ^payment/10/?$ /modules/services/payment_10.php [L,QSA]
+RewriteRule ^payment/50/?$ /modules/services/payment_50.php [L,QSA]
+RewriteRule ^payment/100/?$ /modules/services/payment_100.php [L,QSA]

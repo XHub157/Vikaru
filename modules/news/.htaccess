@@ -1,0 +1,27 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^/?$ /modules/news/index.php [L,QSA]
+RewriteRule ^([0-9]*)/?$ /modules/news/view_news.php?id=$1 [L,QSA]
+RewriteRule ^add_news/?$ /modules/news/add_news.php [L,QSA]
+RewriteRule ^edit_news/([0-9]*)/?$ /modules/news/edit_news.php?id=$1 [L,QSA]
+RewriteRule ^delete_news/([0-9]*)/?$ /modules/news/delete_news.php?id=$1 [L,QSA]
+RewriteRule ^closed_news/([0-9]*)/?$ /modules/news/closed_news.php?id=$1 [L,QSA]
+RewriteRule ^rating/plus/([0-9]*)/?$ /modules/news/rating_plus.php?id=$1 [L,QSA]
+RewriteRule ^rating/minus/([0-9]*)/?$ /modules/news/rating_minus.php?id=$1 [L,QSA]
+RewriteRule ^views/([0-9]*)/?$ /modules/news/views.php?id=$1 [L,QSA]
+RewriteRule ^rating/([0-9]*)/?$ /modules/news/rating.php?id=$1 [L,QSA]
+
+RewriteRule ^add_comment/([0-9]*)/?$ /modules/news/add_comment.php?id=$1 [L,QSA]
+RewriteRule ^answer_comment/([0-9]*)/?$ /modules/news/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^quote_comment/([0-9]*)/?$ /modules/news/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^edit_comment/([0-9]*)/?$ /modules/news/edit_comment.php?id=$1 [L,QSA]
+RewriteRule ^delete_comment/([0-9]*)/?$ /modules/news/delete_comment.php?id=$1 [L,QSA]
+RewriteRule ^hide_comment/([0-9]*)/?$ /modules/news/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^like_comment/([0-9]*)/?$ /modules/news/like_comment.php?id=$1 [L,QSA]
+
+RewriteRule ^add_bookmarks/([0-9]*)/?$ /modules/news/add_bookmarks.php?id=$1 [L,QSA]
+RewriteRule ^search/?$ /modules/news/search.php [L,QSA]

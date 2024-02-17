@@ -1,0 +1,33 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/files/index.php?id=$1 [L,QSA]
+RewriteRule ^dir/([0-9]*)/?$ /modules/files/dir.php?id=$1 [L,QSA]
+RewriteRule ^add_dir/?$ /modules/files/add_dir.php [L,QSA]
+RewriteRule ^add_dir/([0-9]*)/?$ /modules/files/add_dirs.php?id=$1 [L,QSA]
+RewriteRule ^edit_dir/([0-9]*)/?$ /modules/files/edit_dir.php?id=$1 [L,QSA]
+RewriteRule ^delete_dir/([0-9]*)/?$ /modules/files/delete_dir.php?id=$1 [L,QSA]
+
+RewriteRule ^add_file/?$ /modules/files/add_file.php [L,QSA]
+RewriteRule ^add_file/([0-9]*)/?$ /modules/files/add_files.php?id=$1 [L,QSA]
+RewriteRule ^file/like_file/([0-9]*)/?$ /modules/files/like_file.php?id=$1 [L,QSA]
+RewriteRule ^file/screen/([0-9]*)/?$ /modules/files/screen.php?id=$1 [L,QSA]
+RewriteRule ^file/add_bookmarks/([0-9]*)/?$ /modules/files/add_bookmarks.php?id=$1 [L,QSA]
+RewriteRule ^file/edit_file/([0-9]*)/?$ /modules/files/edit_file.php?id=$1 [L,QSA]
+RewriteRule ^file/delete_file/([0-9]*)/?$ /modules/files/delete_file.php?id=$1 [L,QSA]
+RewriteRule ^file/([0-9]*)/?$ /modules/files/view_file.php?id=$1 [L,QSA]
+
+RewriteRule ^file/add_comment/([0-9]*)/?$ /modules/files/add_comment.php?id=$1 [L,QSA]
+RewriteRule ^file/answer_comment/([0-9]*)/?$ /modules/files/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^file/quote_comment/([0-9]*)/?$ /modules/files/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^file/like_comment/([0-9]*)/?$ /modules/files/like_comment.php?id=$1 [L,QSA]
+RewriteRule ^file/hide_comment/([0-9]*)/?$ /modules/files/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^file/edit_comment/([0-9]*)/?$ /modules/files/edit_comment.php?id=$1 [L,QSA]
+RewriteRule ^file/delete_comment/([0-9]*)/?$ /modules/files/delete_comment.php?id=$1 [L,QSA]
+
+RewriteRule ^file/views/([0-9]*)/?$ /modules/files/views.php?id=$1 [L,QSA]
+RewriteRule ^file/likes/([0-9]*)/?$ /modules/files/likes.php?id=$1 [L,QSA]
+RewriteRule ^search/?$ /modules/files/search.php [L,QSA]

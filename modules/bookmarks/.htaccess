@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/bookmarks/bookmarks_user.php?id=$1 [L,QSA]
+RewriteRule ^edit_bookmarks/([0-9]*)/?$ /modules/bookmarks/edit_bookmarks.php?id=$1 [L,QSA]
+RewriteRule ^delete_bookmarks/([0-9]*)/?$ /modules/bookmarks/delete_bookmarks.php?id=$1 [L,QSA]
+RewriteRule ^add/([0-9]*)/?$ /modules/bookmarks/bookmarks_add.php?id=$1 [L,QSA]
+RewriteRule ^delete/([0-9]*)/?$ /modules/bookmarks/bookmarks_delete.php?id=$1 [L,QSA]

@@ -1,0 +1,33 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/photo_album/index.php?id=$1 [L,QSA]
+RewriteRule ^album/([0-9]*)/?$ /modules/photo_album/album.php?id=$1 [L,QSA]
+RewriteRule ^add_album/?$ /modules/photo_album/add_album.php [L,QSA]
+RewriteRule ^add_album/([0-9]*)/?$ /modules/photo_album/add_albums.php?id=$1 [L,QSA]
+RewriteRule ^edit_album/([0-9]*)/?$ /modules/photo_album/edit_album.php?id=$1 [L,QSA]
+RewriteRule ^delete_album/([0-9]*)/?$ /modules/photo_album/delete_album.php?id=$1 [L,QSA]
+
+RewriteRule ^add_photo/?$ /modules/photo_album/add_photo.php [L,QSA]
+RewriteRule ^add_photo/([0-9]*)/?$ /modules/photo_album/add_photos.php?id=$1 [L,QSA]
+RewriteRule ^photo/like_photo/([0-9]*)/?$ /modules/photo_album/like_photo.php?id=$1 [L,QSA]
+RewriteRule ^photo/avatar/([0-9]*)/?$ /modules/photo_album/avatar.php?id=$1 [L,QSA]
+RewriteRule ^photo/add_bookmarks/([0-9]*)/?$ /modules/photo_album/add_bookmarks.php?id=$1 [L,QSA]
+RewriteRule ^photo/edit_photo/([0-9]*)/?$ /modules/photo_album/edit_photo.php?id=$1 [L,QSA]
+RewriteRule ^photo/delete_photo/([0-9]*)/?$ /modules/photo_album/delete_photo.php?id=$1 [L,QSA]
+RewriteRule ^photo/([0-9]*)/?$ /modules/photo_album/view_photo.php?id=$1 [L,QSA]
+
+RewriteRule ^photo/add_comment/([0-9]*)/?$ /modules/photo_album/add_comment.php?id=$1 [L,QSA]
+RewriteRule ^photo/answer_comment/([0-9]*)/?$ /modules/photo_album/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^photo/quote_comment/([0-9]*)/?$ /modules/photo_album/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^photo/like_comment/([0-9]*)/?$ /modules/photo_album/like_comment.php?id=$1 [L,QSA]
+RewriteRule ^photo/hide_comment/([0-9]*)/?$ /modules/photo_album/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^photo/edit_comment/([0-9]*)/?$ /modules/photo_album/edit_comment.php?id=$1 [L,QSA]
+RewriteRule ^photo/delete_comment/([0-9]*)/?$ /modules/photo_album/delete_comment.php?id=$1 [L,QSA]
+
+RewriteRule ^photo/views/([0-9]*)/?$ /modules/photo_album/views.php?id=$1 [L,QSA]
+RewriteRule ^photo/likes/([0-9]*)/?$ /modules/photo_album/likes.php?id=$1 [L,QSA]
+RewriteRule ^search/?$ /modules/photo_album/search.php [L,QSA]

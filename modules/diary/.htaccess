@@ -1,0 +1,29 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^/?$ /modules/diary/index.php [L,QSA]
+RewriteRule ^add_diary/?$ /modules/diary/add_diary.php [L,QSA]
+RewriteRule ^delete_share/([0-9]*)/?$ /modules/diary/delete_share.php?id=$1 [L,QSA]
+RewriteRule ^([0-9]*)/?$ /modules/diary/view_diary.php?id=$1 [L,QSA]
+RewriteRule ^share_diary/([0-9]*)/?$ /modules/diary/share_diary.php?id=$1 [L,QSA]
+RewriteRule ^like_diary/([0-9]*)/?$ /modules/diary/like_diary.php?id=$1 [L,QSA]
+RewriteRule ^edit_diary/([0-9]*)/?$ /modules/diary/edit_diary.php?id=$1 [L,QSA]
+RewriteRule ^delete_diary/([0-9]*)/?$ /modules/diary/delete_diary.php?id=$1 [L,QSA]
+RewriteRule ^add_comment/([0-9]*)/?$ /modules/diary/add_comment.php?id=$1 [L,QSA]
+RewriteRule ^edit_comment/([0-9]*)/?$ /modules/diary/edit_comment.php?id=$1 [L,QSA]
+RewriteRule ^answer_comment/([0-9]*)/?$ /modules/diary/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^quote_comment/([0-9]*)/?$ /modules/diary/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^hide_comment/([0-9]*)/?$ /modules/diary/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^delete_comment/([0-9]*)/?$ /modules/diary/delete_comment.php?id=$1 [L,QSA]
+RewriteRule ^like_comment/([0-9]*)/?$ /modules/diary/like_comment.php?id=$1 [L,QSA]
+RewriteRule ^views/([0-9]*)/?$ /modules/diary/views.php?id=$1 [L,QSA]
+RewriteRule ^share/([0-9]*)/?$ /modules/diary/share.php?id=$1 [L,QSA]
+RewriteRule ^likes/([0-9]*)/?$ /modules/diary/likes.php?id=$1 [L,QSA]
+RewriteRule ^search/advanced/?$ /modules/diary/advanced.php [L,QSA]
+RewriteRule ^search/?$ /modules/diary/search.php [L,QSA]
+RewriteRule ^user/([0-9]*)/?$ /modules/diary/user_diary.php?id=$1 [L,QSA]
+
+RewriteRule ^add_bookmarks/([0-9]*)/?$ /modules/diary/add_bookmarks.php?id=$1 [L,QSA]

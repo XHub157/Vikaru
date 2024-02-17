@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^aut/?$ /modules/authorization/aut.php [L,QSA]
+RewriteRule ^output/?$ /modules/authorization/output.php [L,QSA]
+RewriteRule ^password/?$ /modules/authorization/password.php [L,QSA]
+
+
+

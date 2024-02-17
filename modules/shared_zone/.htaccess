@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^add_dir/?$ /modules/shared_zone/add_dir.php [L,QSA]
+RewriteRule ^add_dir/([0-9]*)/?$ /modules/shared_zone/add_dirs.php?id=$1 [L,QSA]
+RewriteRule ^edit_dir/([0-9]*)/?$ /modules/shared_zone/edit_dir.php?id=$1 [L,QSA]
+RewriteRule ^delete_dir/([0-9]*)/?$ /modules/shared_zone/delete_dir.php?id=$1 [L,QSA]
+RewriteRule ^dir/([0-9]*)/?$ /modules/shared_zone/dir.php?id=$1 [L,QSA]
+RewriteRule ^upload/([0-9]*)/?$ /modules/shared_zone/upload.php?id=$1 [L,QSA]
+RewriteRule ^delete_file/([0-9]*)/?$ /modules/shared_zone/delete_file.php?id=$1 [L,QSA]

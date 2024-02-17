@@ -1,0 +1,15 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/guestbook/index.php?id=$1 [L,QSA]
+RewriteRule ^add_comment/([0-9]*)/?$ /modules/guestbook/add_comment.php?id=$1 [L,QSA]
+RewriteRule ^answer_comment/([0-9]*)/?$ /modules/guestbook/answer_comment.php?id=$1 [L,QSA]
+RewriteRule ^quote_comment/([0-9]*)/?$ /modules/guestbook/quote_comment.php?id=$1 [L,QSA]
+RewriteRule ^edit_comment/([0-9]*)/?$ /modules/guestbook/edit_comment.php?id=$1 [L,QSA]
+RewriteRule ^hide_comment/([0-9]*)/?$ /modules/guestbook/hide_comment.php?id=$1 [L,QSA]
+RewriteRule ^delete_comment/([0-9]*)/?$ /modules/guestbook/delete_comment.php?id=$1 [L,QSA]
+RewriteRule ^like_comment/([0-9]*)/?$ /modules/guestbook/like_comment.php?id=$1 [L,QSA]
+RewriteRule ^clean/?$ /modules/guestbook/clean.php [L,QSA]

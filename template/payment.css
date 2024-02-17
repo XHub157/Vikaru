@@ -1,0 +1,178 @@
+#smsbill_form {
+
+              background-color: #FFFFFF;
+              color: #686868;
+              word-wrap: break-word;
+              position: relative;
+              padding: 40px 20px 15px 20px;
+              border-bottom:1px solid #eee;
+              border-left:1px solid #dcdee2;
+              border-right:1px solid #dcdee2;
+              box-shadow: 0 0 9px 1px rgba(71,79,87,0.15);
+
+}	
+
+#smsbill_page_lang { 
+
+              padding: 3px 0px 3px 0px;
+              top: 10px;
+              position: absolute;
+
+}
+
+#smsbill_page_new_lang {
+
+              float: left;
+
+}
+
+.n1 {
+
+              padding: 3px 0px 3px 0px;
+
+}
+
+.n2 {
+
+              padding: 3px 0px 3px 0px;
+
+}
+
+.n3 {
+
+              padding: 3px 0px 0px 0px;
+
+}
+
+.n4 {
+
+              padding: 10px 0px 10px 0px;
+              margin-bottom: 5px;
+              border-top: 1px dotted #CCC;
+              border-bottom: 1px dotted #CCC;
+
+}
+
+#smsbill_country, #smsbill_operator {
+
+              padding: 1px;
+              margin: 0px 0px 0px 0px;
+              width: 200px; 
+              border: solid 1px #999;
+
+}
+
+#smsbill_form input {
+
+              padding: 3px;
+              border: solid 1px #999;
+              vertical-align: top;
+              margin: 0px 3px 0px 0px !important;
+              width: 150px;
+
+}
+
+#smsbill_form label,b {
+
+              display: inline-block;
+              width: 180px;
+
+}
+
+#smsbill_form .header {
+
+              font-size: 12px;
+              margin-bottom:0px !important;
+              margin-top:0px;
+              height: 1.23em;
+
+}
+
+.gl {
+
+              border-bottom: dotted 5px #fff;
+
+}
+
+#smsbill_number {
+
+              color: #aa0000;
+
+}
+
+#smsbill_price {
+
+              color: #000;
+              font-size: 12px;
+
+}
+
+#smsbill_code {
+
+              vertical-align: middle;
+              display: inline;
+
+}
+
+#smsbill_special {
+
+              font-weight: 100;
+              font-size: 12px;
+              padding: 0px 0px 0px 0px;
+              margin: 0px;
+
+}
+
+#smsbill_form .quantity {
+
+              padding: 0px 0px 5px 0px;
+              margin: 0px !important;
+
+}
+
+#smsbill_form small {
+
+              display: block;
+              font-size: 11px;
+              font-weight: bold;
+              color: #cc0202;
+              margin-top: 0px;
+
+}
+
+#smsbill_mts_special {
+
+              font-size: 10px;
+              letter-spacing: 0.7px;
+              line-height: 0.9;
+              font-weight: 300;
+              padding: 0px 0px 0px 0px;
+              margin: 0px;
+
+}
+
+#smsbill_form .button {
+
+              background-color: #33aee8;
+              color: #ffffff;
+              font-weight: bold;
+              display: inline-block;
+              width: 69px;
+              height: 24px;
+              cursor: pointer;
+              border-radius: 3px;
+
+}
+
+#smsbill_form:hover .button:hover {
+
+              background-color: #37c2fb;;
+
+}
+
+select {
+
+              border: 1px solid #eeeeee;
+              color: #686868;
+
+}

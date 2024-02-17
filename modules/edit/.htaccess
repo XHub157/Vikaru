@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^main/?$ /modules/edit/main.php [L,QSA]
+RewriteRule ^contacts/?$ /modules/edit/contacts.php [L,QSA]
+RewriteRule ^type/?$ /modules/edit/type.php [L,QSA]
+RewriteRule ^interests/?$ /modules/edit/interests.php [L,QSA]
+RewriteRule ^additionally/?$ /modules/edit/additionally.php [L,QSA]
+RewriteRule ^country/?$ /modules/edit/country.php [L,QSA]
+RewriteRule ^country_section/([0-9]*)/?$ /modules/edit/country_section.php?id=$1 [L,QSA]
+RewriteRule ^region_section/([0-9]*)/?$ /modules/edit/region_section.php?id=$1 [L,QSA]
+RewriteRule ^city/([0-9]*)/?$ /modules/edit/city.php?id=$1 [L,QSA]
+RewriteRule ^search/?$ /modules/edit/search.php [L,QSA]

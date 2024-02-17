@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^([0-9]*)/?$ /modules/feed/index.php?id=$1 [L,QSA]
+RewriteRule ^user/([0-9]*)/?$ /modules/feed/user_feed.php?id=$1 [L,QSA]
+RewriteRule ^my/?$ /modules/feed/my_feed.php [L,QSA]
+RewriteRule ^delete/([0-9]*)/?$ /modules/feed/feed_delete.php?id=$1 [L,QSA]
+RewriteRule ^add/([0-9]*)/?$ /modules/feed/feed_add.php?id=$1 [L,QSA]
+RewriteRule ^feed_user/([0-9]*)/?$ /modules/feed/feed_user.php?id=$1 [L,QSA]
+RewriteRule ^feed_main/([0-9]*)/?$ /modules/feed/feed_main.php?id=$1 [L,QSA]
